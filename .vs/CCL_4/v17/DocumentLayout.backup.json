@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\unter\\OneDrive\\Desktop\\CCL_4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19567889-DFA2-CDB4-72D6-BB7D0F3DAC5F}|Assembly-CSharp.csproj|c:\\users\\unter\\onedrive\\desktop\\ccl_4\\assets\\blockout\\shaders\\blockout_shader_tri_2018.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{19567889-DFA2-CDB4-72D6-BB7D0F3DAC5F}|Assembly-CSharp.csproj|solutionrelative:assets\\blockout\\shaders\\blockout_shader_tri_2018.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Blockout_Shader_Tri_2018.shader",
+              "DocumentMoniker": "C:\\Users\\unter\\OneDrive\\Desktop\\CCL_4\\Assets\\Blockout\\Shaders\\Blockout_Shader_Tri_2018.shader",
+              "RelativeDocumentMoniker": "Assets\\Blockout\\Shaders\\Blockout_Shader_Tri_2018.shader",
+              "ToolTip": "C:\\Users\\unter\\OneDrive\\Desktop\\CCL_4\\Assets\\Blockout\\Shaders\\Blockout_Shader_Tri_2018.shader",
+              "RelativeToolTip": "Assets\\Blockout\\Shaders\\Blockout_Shader_Tri_2018.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-06-11T12:17:12.493Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
