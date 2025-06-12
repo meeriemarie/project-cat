@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\CCL4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CCL4\\Assets\\Scripts\\SimpleCameraFollow.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SimpleCameraFollow.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CCL4\\Assets\\Scripts\\InteractableObject.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InteractableObject.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CCL4\\Assets\\Scripts\\CatMovement.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CatMovement.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controllers\\DoorController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController1.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controllers\\DoorController1.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SimpleCameraFollow.cs",
-              "DocumentMoniker": "E:\\CCL4\\Assets\\Scripts\\SimpleCameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SimpleCameraFollow.cs",
-              "ToolTip": "E:\\CCL4\\Assets\\Scripts\\SimpleCameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SimpleCameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DoorController1.cs",
+              "DocumentMoniker": "E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controllers\\DoorController1.cs",
+              "ToolTip": "E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controllers\\DoorController1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T11:28:52.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T12:49:43.806Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CatMovement.cs",
-              "DocumentMoniker": "E:\\CCL4\\Assets\\Scripts\\CatMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CatMovement.cs",
-              "ToolTip": "E:\\CCL4\\Assets\\Scripts\\CatMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CatMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "DoorController.cs",
+              "DocumentMoniker": "E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controllers\\DoorController.cs",
+              "ToolTip": "E:\\CCL4\\Assets\\Scripts\\Controllers\\DoorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controllers\\DoorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T11:24:57.867Z",
+              "WhenOpened": "2025-06-12T12:25:45.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InteractableObject.cs",
+              "DocumentMoniker": "E:\\CCL4\\Assets\\Scripts\\InteractableObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractableObject.cs",
+              "ToolTip": "E:\\CCL4\\Assets\\Scripts\\InteractableObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InteractableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:12:55.55Z",
               "EditorCaption": ""
             }
           ]
