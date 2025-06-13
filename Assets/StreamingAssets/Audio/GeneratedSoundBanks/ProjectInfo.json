@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "project-cat_WwiseProject",
+   "GUID": "{F960F98B-A0EF-47F6-B91A-E8EA98FC6814}",
+   "Generator": "2024.1.5.8803"
+  },
+  "CacheRoot": "../../../../project-cat_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{62DDC6CD-EFD8-490B-B472-6F2D20C83AF3}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../project-cat_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{ACBD17B2-C7FE-412B-9B4A-21BA6958D152}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../project-cat_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{57B3196B-176A-4BA1-94A1-4BEC72B5C776}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{22CC4265-117B-5715-B64F-4FFA537B6E4E}"
+ }
+}
