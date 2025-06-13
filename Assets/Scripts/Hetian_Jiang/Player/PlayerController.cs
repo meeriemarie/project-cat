@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
+    public LayerMask objectLayer;
 
     [Header("Camera")]
     public Transform cameraTransform;
