@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E64E08FA-A90B-4FE8-B6D3-1CF185677CA7}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{E64E08FA-A90B-4FE8-B6D3-1CF185677CA7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E64E08FA-A90B-4FE8-B6D3-1CF185677CA7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{1B104754-CA17-44BD-8F82-8F59D5C529C6}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_cyber_town_simcity_style_music_22907" ID="{740FC613-6095-445D-9DC6-46DCCD9E1BBA}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Button" ID="{29F73F07-4FA3-4C9A-8FE8-35B5E1A592F9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_tap_notification_180637" ID="{5B2E5B91-BFBB-429E-833D-523BA3793DEA}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -11,6 +11,19 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_CYBER_TOWN_SIMCITY_STYLE_MUSIC_22907 = 3784844564U;
+        static const AkUniqueID PLAY_TAP_NOTIFICATION_180637 = 2409677907U;
+    } // namespace EVENTS
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID BUTTON = 977454165U;
+        static const AkUniqueID MAIN = 3161908922U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
