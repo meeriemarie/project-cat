@@ -25,6 +25,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_RandomMeow" ID="{461DD4A7-A45F-4907-B357-A08CE6DE7906}">
+					<ChildrenList>
+						<Action Name="" ID="{397946DB-343B-41AC-B0B5-E76DDA613FDB}" ShortID="14258554">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomMeow" ID="{69AB8064-B540-4B18-A065-55E4C1171A8F}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_concrete_footsteps_6752" ID="{6D35AF18-C8EF-408B-9A0E-FD9E840A57FD}">
+					<ChildrenList>
+						<Action Name="" ID="{8CC2B375-A854-4202-A5F5-332CA00ECBC0}" ShortID="367805616">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="concrete-footsteps-6752" ID="{D8EC2581-41AA-467E-85B2-0473317C51AC}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_concrete_footsteps_6752" ID="{4F4CAC7B-900E-4CD4-98E4-5690CCE62D60}">
+					<ChildrenList>
+						<Action Name="" ID="{60956303-FE01-455E-839B-B2DDB65485C3}" ShortID="919303651">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="concrete-footsteps-6752" ID="{D8EC2581-41AA-467E-85B2-0473317C51AC}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -47,72 +47,6 @@
 						<ActiveSource Name="cash-register-kaching-sound-effect-125042" ID="{428D770E-B5D5-4D09-802E-976BC8E1FDE1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="cat-meow-15-fx-306190" ID="{9F1102A5-2CB0-40D5-AA2C-87FFBA4A3684}" ShortID="208389951">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cat-meow-15-fx-306190" ID="{2BFC03A2-9068-411F-A8C9-61E16C127635}">
-							<Language>SFX</Language>
-							<AudioFile>cat-meow-15-fx-306190.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="68512853"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cat-meow-15-fx-306190" ID="{2BFC03A2-9068-411F-A8C9-61E16C127635}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="cat-meow-14536" ID="{F5E7C8B4-EBDF-4E4C-870B-86DA302B679C}" ShortID="1020299047">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cat-meow-14536" ID="{DCAA100C-F1FC-4F63-A66E-D92B1E871591}">
-							<Language>SFX</Language>
-							<AudioFile>cat-meow-14536.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="941022267"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cat-meow-14536" ID="{DCAA100C-F1FC-4F63-A66E-D92B1E871591}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="cat-meow-321642" ID="{B1E2E956-75A4-4C6C-AB72-7A887D157115}" ShortID="608997086">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cat-meow-321642" ID="{76CFD3B0-3EFD-4526-B241-718B7B184372}">
-							<Language>SFX</Language>
-							<AudioFile>cat-meow-321642.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="947525378"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cat-meow-321642" ID="{76CFD3B0-3EFD-4526-B241-718B7B184372}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="cat-purr-128584" ID="{1C112DE5-5119-45CC-A092-D76FEE580BF1}" ShortID="322177482">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -158,7 +92,107 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="concrete-footsteps-6752" ID="{D8EC2581-41AA-467E-85B2-0473317C51AC}" ShortID="776749655">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{688B52AA-0854-4FD1-BC2C-EC99C6062DF5}" ShortID="830357349">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="6"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{F8742C91-72D2-4D1C-8F51-6E40CEC0FE6F}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>3.19196</XPos>
+															<YPos>-12.14279</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>6</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
 						</Reference>
@@ -189,7 +223,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-32</Value>
+								<Value>-22</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -350,7 +384,7 @@
 					<PropertyList>
 						<Property Name="OutputBusVolume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -373,6 +407,142 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="tap-notification-180637" ID="{CC3DA147-321A-41E1-A650-4484D6804954}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="RandomMeow" ID="{69AB8064-B540-4B18-A065-55E4C1171A8F}" ShortID="87719106">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="cat-meow-15-fx-306190" ID="{9F1102A5-2CB0-40D5-AA2C-87FFBA4A3684}" ShortID="208389951">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cat-meow-15-fx-306190" ID="{2BFC03A2-9068-411F-A8C9-61E16C127635}">
+									<Language>SFX</Language>
+									<AudioFile>cat-meow-15-fx-306190.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="68512853"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cat-meow-15-fx-306190" ID="{2BFC03A2-9068-411F-A8C9-61E16C127635}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cat-meow-321642" ID="{B1E2E956-75A4-4C6C-AB72-7A887D157115}" ShortID="608997086">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>22</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cat-meow-321642" ID="{76CFD3B0-3EFD-4526-B241-718B7B184372}">
+									<Language>SFX</Language>
+									<AudioFile>cat-meow-321642.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="947525378"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cat-meow-321642" ID="{76CFD3B0-3EFD-4526-B241-718B7B184372}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cat-meow-14536" ID="{F5E7C8B4-EBDF-4E4C-870B-86DA302B679C}" ShortID="1020299047">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cat-meow-14536" ID="{DCAA100C-F1FC-4F63-A66E-D92B1E871591}">
+									<Language>SFX</Language>
+									<AudioFile>cat-meow-14536.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="941022267"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cat-meow-14536" ID="{DCAA100C-F1FC-4F63-A66E-D92B1E871591}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="woofbig2-40265" ID="{DE4FEF76-1A56-4019-81AD-48AF7944AAF5}" ShortID="989066145">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}">
+							<Language>SFX</Language>
+							<AudioFile>woofbig2-40265.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="188255706"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="woofbig-96560" ID="{D1A7FB19-FA0B-40A4-96D0-925ABA781F7C}" ShortID="130845876">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}">
+							<Language>SFX</Language>
+							<AudioFile>woofbig-96560.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="684452900"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

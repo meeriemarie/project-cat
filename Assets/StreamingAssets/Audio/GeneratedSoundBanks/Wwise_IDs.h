@@ -13,9 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CONCRETE_FOOTSTEPS_6752 = 1984218746U;
         static const AkUniqueID PLAY_CYBER_TOWN_SIMCITY_STYLE_MUSIC_22907 = 3784844564U;
+        static const AkUniqueID PLAY_RANDOMMEOW = 3339313491U;
         static const AkUniqueID PLAY_TAP_NOTIFICATION_180637 = 2409677907U;
+        static const AkUniqueID STOP_CONCRETE_FOOTSTEPS_6752 = 2179206424U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID GLOBALVOLUME = 4071000082U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
