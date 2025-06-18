@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -102,7 +103,7 @@ public class HumanChaser : ChaserBase
             if (timer >= captureDuration)
             {
                 Debug.Log("Game Over: The cat has been caught!");
-                // TODO: Notify GameManager to trigger game over UI/logic
+                GameManager.Instance.OnPlayerCaught();
                 break;
             }
 
@@ -114,29 +115,35 @@ public class HumanChaser : ChaserBase
 
     protected override bool CanSeePlayer()
     {
-        if (player == null) return false;
+        if (player == null)
+        {
+            Debug.LogWarning("HumanChaser: Player reference is null.");
+            return false;
+        }
 
-        Vector3 origin = transform.position + Vector3.up;
-        Vector3 dirToPlayer = player.position - transform.position;
-        float distanceToPlayer = dirToPlayer.magnitude;
+        // Adjust for scale: Human's eye height & Player's mid-body
+        Vector3 origin = transform.position + Vector3.up * 0.5f;
+        Vector3 target = player.position + Vector3.up * 0.1f;
 
+        Vector3 dirToPlayer = (target - origin).normalized;
+        float distanceToPlayer = Vector3.Distance(origin, target);
         float angleToPlayer = Vector3.Angle(transform.forward, dirToPlayer);
+
         if (distanceToPlayer <= viewDistance && angleToPlayer <= viewAngle / 2f)
         {
-            // Raycast against everything (or customize with a visibilityMask)
-            if (Physics.Raycast(origin, dirToPlayer.normalized, out RaycastHit hit, distanceToPlayer, ~0))
-            {
-                Debug.DrawLine(origin, hit.point, hit.transform.CompareTag("Player") ? Color.green : Color.red);
+            Debug.DrawLine(origin, target, Color.yellow); // visualize line of sight
 
+            if (Physics.Raycast(origin, dirToPlayer, out RaycastHit hit, distanceToPlayer, ~0))
+            {
                 if (hit.transform.CompareTag("Player"))
                 {
                     return true;
                 }
             }
         }
-
         return false;
     }
+
 
     void OnDrawGizmosSelected()
     {

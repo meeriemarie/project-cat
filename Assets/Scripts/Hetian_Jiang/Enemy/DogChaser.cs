@@ -159,7 +159,7 @@ public class DogChaser : ChaserBase
             if (timer >= captureDuration)
             {
                 Debug.Log("Game Over: The cat has been caught by the dog!");
-                // TODO: Trigger Game Over logic
+                GameManager.Instance.OnPlayerCaught();
                 break;
             }
 
