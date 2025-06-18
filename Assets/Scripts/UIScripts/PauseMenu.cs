@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject npcFootstepSource;
+
     
     // Update is called once per frame
     void Update()
@@ -35,6 +37,7 @@ public class PauseMenu : MonoBehaviour
     void Pause() {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        AkUnitySoundEngine.PostEvent("Stop_concrete_footsteps_6752", npcFootstepSource);
         GameIsPaused = true;
      
     }
