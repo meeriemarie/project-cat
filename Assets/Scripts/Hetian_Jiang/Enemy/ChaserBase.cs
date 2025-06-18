@@ -20,7 +20,7 @@ public abstract class ChaserBase : MonoBehaviour
         }
     }
 
-    protected bool CanSeePlayer()
+    protected virtual bool CanSeePlayer()
     {
         if (player == null) return false;
         float distance = Vector3.Distance(transform.position, player.position);
