@@ -3,9 +3,7 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     public int requiredInteractions = 1;
-    private int currentInteractions = 0;
     private bool isUnlocked = false;
-
     public bool openAtStart = false;
 
     private void Start()
@@ -17,23 +15,9 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    public void RegisterInteraction()
+    public void OpenDoor()
     {
-        if (isUnlocked) return;
-
-        currentInteractions++;
-        Debug.Log($"{gameObject.name} interaction count: {currentInteractions}");
-
-        if (currentInteractions >= requiredInteractions)
-        {
-            isUnlocked = true;
-            OpenDoor();
-        }
-    }
-
-    private void OpenDoor()
-    {
-        // For now, just disable the door to “open” it.
+        // For now, just disable the door to ï¿½openï¿½ it.
         gameObject.SetActive(false);
         Debug.Log($"{gameObject.name} unlocked!");
     }
