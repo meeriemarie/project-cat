@@ -15,19 +15,19 @@ public class PlayerController : MonoBehaviour
     [Header("Dash")]
     [SerializeField] private float _dashForce = 10f;
     [SerializeField] private float _dashCooldown = 1f;
-
     private bool _canDash = true;
 
     [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
-    public LayerMask objectLayer;
 
     [Header("Camera")]
     public Transform cameraTransform;
 
-    // Private state
+    [Header("Animator")]
+    [SerializeField] private Animator _animator;
+
     private Rigidbody _rb;
     private Vector2 _moveInput;
     private bool _isGrounded;
@@ -35,30 +35,29 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        // Prevent flopping: only allow Y-axis rotation
         _rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+        // Safety check
+        if (_animator == null)
+        {
+            _animator = GetComponentInChildren<Animator>();
+        }
     }
 
     private void Update()
     {
-        // Check if the player is grounded
         _isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Optional: apply slight damping to horizontal velocity in air
-        if (!_isGrounded)
-        {
-            Vector3 vel = _rb.velocity;
-            vel.x *= 0.98f;
-            vel.z *= 0.98f;
-            _rb.velocity = vel;
-        }
+        // Update animator parameters
+        bool isWalking = _moveInput.magnitude > 0.1f;
+        _animator.SetBool("isWalking", isWalking);
+        _animator.SetBool("isGrounded", _isGrounded);
     }
 
     private void FixedUpdate()
     {
         if (cameraTransform == null) return;
 
-        // Get camera's flattened forward/right directions
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
         forward.y = 0;
@@ -66,13 +65,9 @@ public class PlayerController : MonoBehaviour
         forward.Normalize();
         right.Normalize();
 
-        // Compute movement direction based on input and camera
         Vector3 move = forward * _moveInput.y + right * _moveInput.x;
-
-        // Move player
         _rb.MovePosition(_rb.position + _moveSpeed * Time.fixedDeltaTime * move);
 
-        // Rotate to face movement direction
         if (move != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(move, Vector3.up);
@@ -90,9 +85,9 @@ public class PlayerController : MonoBehaviour
     {
         if (_isGrounded)
         {
-            // Reset Y velocity to avoid buildup
             _rb.velocity = new Vector3(_rb.velocity.x, 0f, _rb.velocity.z);
             _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+            _animator.SetTrigger("jumpTrigger");
         }
     }
 
@@ -100,28 +95,29 @@ public class PlayerController : MonoBehaviour
     {
         if (!_canDash || !_isGrounded) return;
 
-        // Get dash direction from input
         Vector3 dashDir = (cameraTransform.forward * _moveInput.y + cameraTransform.right * _moveInput.x).normalized;
         dashDir.y = 0;
+        if (dashDir == Vector3.zero) dashDir = transform.forward;
 
-        // Default to forward if no input
-        if (dashDir == Vector3.zero)
-            dashDir = transform.forward;
-
-        // Cancel current velocity and apply dash
         _rb.velocity = Vector3.zero;
         _rb.AddForce(dashDir * _dashForce, ForceMode.Impulse);
 
-        // Start cooldowns
+        _animator.speed = 3f; // Triple animation speed during dash
+
         StartCoroutine(EndDashEarly());
         StartCoroutine(DashCooldownRoutine());
+    }
+
+    public void OnScratch()
+    {
+        _animator.SetTrigger("scratchTrigger");
     }
 
     private IEnumerator EndDashEarly()
     {
         yield return new WaitForSeconds(0.5f);
-        // Stop horizontal velocity but preserve vertical
         _rb.velocity = new Vector3(0f, _rb.velocity.y, 0f);
+        _animator.speed = 1f; // Reset to normal speed
     }
 
     private IEnumerator DashCooldownRoutine()
@@ -131,7 +127,6 @@ public class PlayerController : MonoBehaviour
         _canDash = true;
     }
 
-    // Shows ground check sphere in editor
     private void OnDrawGizmosSelected()
     {
         if (groundCheck == null) return;

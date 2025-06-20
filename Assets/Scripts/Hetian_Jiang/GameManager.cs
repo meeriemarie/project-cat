@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
             if (!doorUnlocked[i] && currentScore >= scoreThresholds[i])
             {
                 doorUnlocked[i] = true;
-                doorsToUnlockOnScore[i].RegisterInteraction(); // or OpenDoor() directly if preferred
+                doorsToUnlockOnScore[i].OpenDoor();
             }
         }
     }

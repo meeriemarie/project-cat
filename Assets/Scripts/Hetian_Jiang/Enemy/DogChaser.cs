@@ -22,6 +22,9 @@ public class DogChaser : ChaserBase
     public float patrolRadius = 10f;
     public float patrolWaitTime = 1f;
 
+    [Header("Animator")]
+    [SerializeField] private Animator _animator;
+
     private NavMeshAgent _agent;
     private Rigidbody _rb;
     private Coroutine _captureCoroutine;
@@ -66,6 +69,12 @@ public class DogChaser : ChaserBase
         {
             Patrol();
         }
+
+
+        if (_agent.velocity.magnitude > 0.1f)
+            _animator.SetBool("isWalking", true);
+        else
+            _animator.SetBool("isWalking", false);
     }
 
     protected override void Chase()
@@ -107,6 +116,8 @@ public class DogChaser : ChaserBase
         _rb.velocity = Vector3.zero;
         _rb.AddForce(dir.normalized * dashForce, ForceMode.Impulse);
 
+        _animator.speed = 3f; // Triple animation speed during dash
+
         // Wait for dash duration
         yield return new WaitForSeconds(0.5f);
 
@@ -115,6 +126,7 @@ public class DogChaser : ChaserBase
         _agent.enabled = true;
 
         _isDashing = false;
+        _animator.speed = 1f; // Reset to normal speed
 
         yield return new WaitForSeconds(dashCooldown);
         _canDash = true;
