@@ -62,6 +62,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_meow_meow_meow_tiktok" ID="{FE2E88E5-A0AF-429B-9453-7623A53356B5}">
+					<ChildrenList>
+						<Action Name="" ID="{0A0E64BB-86F9-4B2B-B4AE-A8281E35D5CE}" ShortID="156152009">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="meow-meow-meow-tiktok" ID="{08FCC3E8-027F-42A9-BE0F-68E9BB67C04A}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_cyber_town_simcity_style_music_22907" ID="{5DC12784-4B67-4BDA-B3F4-13752E750169}">
+					<ChildrenList>
+						<Action Name="" ID="{41522AB5-0766-4FDB-B490-A3B3A6CEABFE}" ShortID="572737585">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cyber-town-simcity-style-music-22907" ID="{3B5413BB-BA4A-41FA-943F-A05BCC959C35}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RandomBark" ID="{4AA47E83-6DBE-4A64-A3A5-34F4AC86AB77}">
+					<ChildrenList>
+						<Action Name="" ID="{CA3CB2B1-6E71-4DD2-ADA2-4F6B8637BF4C}" ShortID="832812542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomBark" ID="{695083F7-FA14-4DA9-AA46-96D791D5DE13}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_meow_meow_meow_tiktok" ID="{2FFEC8BB-4456-4CB5-9CAB-4C63C491DA9D}">
+					<ChildrenList>
+						<Action Name="" ID="{251411E7-5831-41DC-9F8D-2D87D0C80F8E}" ShortID="586594256">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="meow-meow-meow-tiktok" ID="{08FCC3E8-027F-42A9-BE0F-68E9BB67C04A}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
