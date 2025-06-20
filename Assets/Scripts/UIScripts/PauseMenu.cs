@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject npcFootstepSource;
 
+
     
     // Update is called once per frame
     void Update()
@@ -42,9 +43,14 @@ public class PauseMenu : MonoBehaviour
      
     }
 
-    public void LoadMenu() {
+    public void LoadMenu()
+    {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+         if (GameManager.Instance != null)
+        {
+        AkUnitySoundEngine.PostEvent("Stop_meow_meow_meow_tiktok", GameManager.Instance.gameObject);
+        }
     }
  
     public void QuitGame() {

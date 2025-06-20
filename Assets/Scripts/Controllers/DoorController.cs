@@ -33,7 +33,7 @@ public class DoorController : MonoBehaviour
 
     private void OpenDoor()
     {
-        // For now, just disable the door to “open” it.
+        // For now, just disable the door to ï¿½openï¿½ it.
         gameObject.SetActive(false);
         Debug.Log($"{gameObject.name} unlocked!");
     }
