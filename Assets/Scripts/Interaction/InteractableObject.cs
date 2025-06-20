@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    public DoorController[] doorsToUnlock;
     public int scoreValue = 10;
 
     private bool hasInteracted = false; //Track if already interacted

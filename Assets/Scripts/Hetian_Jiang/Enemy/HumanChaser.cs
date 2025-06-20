@@ -20,6 +20,10 @@ public class HumanChaser : ChaserBase
     public float captureDistance = 2f;
     public float captureDuration = 3f;
 
+    [Header("Animator")]
+    [SerializeField] private Animator _animator;
+
+
     private NavMeshAgent _agent;
     private Coroutine _captureCoroutine;
 
@@ -58,6 +62,12 @@ public class HumanChaser : ChaserBase
         {
             Patrol();
         }
+
+        if (_agent.velocity.magnitude > 0.1f)
+            _animator.SetBool("isWalking", true);
+        else
+            _animator.SetBool("isWalking", false);
+
     }
 
     protected override void Chase()
