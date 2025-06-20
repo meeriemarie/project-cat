@@ -10,7 +10,12 @@ public class GameManager : MonoBehaviour
 
     private bool[] doorUnlocked;
 
+    public bool IsGameOver => gameOver;
+
     private bool gameOver = false;
+
+    public GameOverUI gameOverUI; 
+
 
     private void Awake()
     {
@@ -30,8 +35,11 @@ public class GameManager : MonoBehaviour
 
         gameOver = true;
         Debug.Log("Game Over! Player was caught.");
-        
-        // TODO: Show Game Over UI here
+
+        AkUnitySoundEngine.PostEvent("Play_meow_meow_meow_tiktok", gameObject);
+
+        if (gameOverUI != null)
+        gameOverUI.TriggerGameOver();
     }
     public void CheckScoreForUnlock(int currentScore)
     {
