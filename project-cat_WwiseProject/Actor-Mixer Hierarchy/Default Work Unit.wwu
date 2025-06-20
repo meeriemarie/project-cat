@@ -25,50 +25,6 @@
 						<ActiveSource Name="90s-game-ui-6-185099" ID="{1EE8206D-26EA-44BE-BF60-E338288CD7DC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="cash-register-kaching-sound-effect-125042" ID="{0BF06B94-9F47-48B3-86E6-724A7CA7A3F3}" ShortID="832763958">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cash-register-kaching-sound-effect-125042" ID="{428D770E-B5D5-4D09-802E-976BC8E1FDE1}">
-							<Language>SFX</Language>
-							<AudioFile>cash-register-kaching-sound-effect-125042.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="242481681"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cash-register-kaching-sound-effect-125042" ID="{428D770E-B5D5-4D09-802E-976BC8E1FDE1}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="cat-purr-128584" ID="{1C112DE5-5119-45CC-A092-D76FEE580BF1}" ShortID="322177482">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cat-purr-128584" ID="{ABA75A42-BB0C-4F13-8C11-319D7DFDC74B}">
-							<Language>SFX</Language>
-							<AudioFile>cat-purr-128584.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="610593245"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cat-purr-128584" ID="{ABA75A42-BB0C-4F13-8C11-319D7DFDC74B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="coffee-mug-breaking-80394" ID="{A82673A9-1796-455E-929F-6A22C659D4B2}" ShortID="218655020">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -80,6 +36,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="coffee-mug-breaking-80394" ID="{2D9C1749-C707-43D0-86F9-516B1A513EC0}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.007398667957077"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="3.55136061939708"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>coffee-mug-breaking-80394.wav</AudioFile>
 							<MediaIDList>
@@ -104,14 +65,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{688B52AA-0854-4FD1-BC2C-EC99C6062DF5}" ShortID="830357349">
+								<Attenuation Name="Attenuation (Custom)" ID="{6AF7FB64-5E8B-47AD-B304-5C59C8524545}" ShortID="1026902485">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="6"/>
+										<Property Name="RadiusMax" Type="Real64" Value="5"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{F8742C91-72D2-4D1C-8F51-6E40CEC0FE6F}">
+												<Curve Name="VolumeDry" ID="{F72C73CA-F289-4AC6-A7CC-6625382D23BF}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -122,12 +83,17 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>3.19196</XPos>
-															<YPos>-12.14279</YPos>
+															<XPos>1.54022</XPos>
+															<YPos>-5.53745</YPos>
 															<Flags>0</Flags>
 														</Point>
 														<Point>
-															<XPos>6</XPos>
+															<XPos>2.62341</XPos>
+															<YPos>-10.55917</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>5</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -248,50 +214,6 @@
 						<ActiveSource Name="cyber-town-simcity-style-music-22907" ID="{61AAA7B2-6426-4FD4-8B6D-0F27DEC63E9C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="dachshund-whines-89332" ID="{CC82D617-D99D-4556-BD1B-1C82BD30BADF}" ShortID="278118476">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="dachshund-whines-89332" ID="{EC83F284-493F-4524-83D6-C60F6BD75439}">
-							<Language>SFX</Language>
-							<AudioFile>dachshund-whines-89332.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1021320965"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="dachshund-whines-89332" ID="{EC83F284-493F-4524-83D6-C60F6BD75439}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="game-bonus-144751" ID="{81533633-0ABE-4A55-98FF-25B0AE8E9112}" ShortID="151105102">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="game-bonus-144751" ID="{38D3E27F-C4F6-4865-A7F3-7668B006ABA8}">
-							<Language>SFX</Language>
-							<AudioFile>game-bonus-144751.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="44632184"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="game-bonus-144751" ID="{38D3E27F-C4F6-4865-A7F3-7668B006ABA8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="klopapier-86223" ID="{86BC7AAD-DEDD-4DFF-9298-DB12233ED782}" ShortID="925256480">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -315,6 +237,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="meow-meow-meow-tiktok" ID="{08FCC3E8-027F-42A9-BE0F-68E9BB67C04A}" ShortID="371931068">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
@@ -501,7 +430,176 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="woofbig2-40265" ID="{DE4FEF76-1A56-4019-81AD-48AF7944AAF5}" ShortID="989066145">
+				<RandomSequenceContainer Name="RandomBark" ID="{695083F7-FA14-4DA9-AA46-96D791D5DE13}" ShortID="766354959">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{4308002C-5178-4D3B-8B13-B37F2B90E8E5}" ShortID="566351768">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="5"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{439058DD-D810-4620-977F-D4D883DB99E7}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>1.77788</XPos>
+															<YPos>-6.11948</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>2.95247</XPos>
+															<YPos>-8.72917</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>5</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="woofbig-96560" ID="{D1A7FB19-FA0B-40A4-96D0-925ABA781F7C}" ShortID="130845876">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}">
+									<Language>SFX</Language>
+									<AudioFile>woofbig-96560.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="684452900"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="woofbig2-40265" ID="{DE4FEF76-1A56-4019-81AD-48AF7944AAF5}" ShortID="989066145">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}">
+									<Language>SFX</Language>
+									<AudioFile>woofbig2-40265.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="188255706"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="object-fall-soft-275694" ID="{94125F17-694C-4973-BE3D-7D2853A5245D}" ShortID="265765123">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
@@ -511,38 +609,21 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}">
+						<AudioFileSource Name="object-fall-soft-275694" ID="{2B82140B-7073-44BE-9289-D8D921BD3114}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.509350480180372"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.509350480180372"/>
+							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>woofbig2-40265.wav</AudioFile>
+							<AudioFile>object-fall-soft-275694.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="188255706"/>
+								<MediaID ID="748742914"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="woofbig2-40265" ID="{484EA5D3-4E3C-49EB-B6EA-8AB81FDD077C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="woofbig-96560" ID="{D1A7FB19-FA0B-40A4-96D0-925ABA781F7C}" ShortID="130845876">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B97D8639-4CD6-4193-8E41-5E78C41A39C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0D6FF69-48C6-4226-BBC0-520046F34ABA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}">
-							<Language>SFX</Language>
-							<AudioFile>woofbig-96560.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="684452900"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="woofbig-96560" ID="{ACCE1D2E-A26C-4862-9E1B-5EA0FADDCE77}" Platform="Linked"/>
+						<ActiveSource Name="object-fall-soft-275694" ID="{2B82140B-7073-44BE-9289-D8D921BD3114}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
