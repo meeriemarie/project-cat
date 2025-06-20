@@ -6,13 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
   public void PlayGame() {
+    AkUnitySoundEngine.StopAll();
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-    // still need to index the scenes (File -> Build Settings -> Add Scenes to Queue 
-    // Menu - Game...)
   }
 
-  public void QuitGame() {
+  public void QuitGame()
+  {
     Debug.Log("Quitting");
     Application.Quit();
   }

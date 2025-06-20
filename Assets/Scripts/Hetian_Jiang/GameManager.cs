@@ -35,9 +35,9 @@ public class GameManager : MonoBehaviour
 
         gameOver = true;
         Debug.Log("Game Over! Player was caught.");
-
+        Debug.Log("Game over start");
         AkUnitySoundEngine.PostEvent("Play_meow_meow_meow_tiktok", gameObject);
-
+  Debug.Log("Game over end");
         if (gameOverUI != null)
         gameOverUI.TriggerGameOver();
     }
