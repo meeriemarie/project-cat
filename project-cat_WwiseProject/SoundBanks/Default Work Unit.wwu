@@ -6,7 +6,9 @@
 				<SoundBank Name="Main" ID="{1B104754-CA17-44BD-8F82-8F59D5C529C6}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_concrete_footsteps_6752" ID="{6D35AF18-C8EF-408B-9A0E-FD9E840A57FD}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_coffee_mug_breaking_80394" ID="{076CB753-4802-41E2-A8E6-178DF0C243F8}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_meow_meow_meow_tiktok" ID="{FE2E88E5-A0AF-429B-9453-7623A53356B5}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_object_fall_soft_275694" ID="{5E71738C-5B0F-4335-982A-41FA71C89972}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_cyber_town_simcity_style_music_22907" ID="{740FC613-6095-445D-9DC6-46DCCD9E1BBA}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RandomBark" ID="{4AA47E83-6DBE-4A64-A3A5-34F4AC86AB77}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_cyber_town_simcity_style_music_22907" ID="{5DC12784-4B67-4BDA-B3F4-13752E750169}" WorkUnitID="{C4687139-EAF7-42FE-9095-9784F36695B9}" Origin="Manual" Filter="7"/>

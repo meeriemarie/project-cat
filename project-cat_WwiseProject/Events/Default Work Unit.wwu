@@ -112,6 +112,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_coffee_mug_breaking_80394" ID="{076CB753-4802-41E2-A8E6-178DF0C243F8}">
+					<ChildrenList>
+						<Action Name="" ID="{7B20AC0E-7739-4FEA-846E-2BEDC4752564}" ShortID="87329839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="coffee-mug-breaking-80394" ID="{A82673A9-1796-455E-929F-6A22C659D4B2}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_object_fall_soft_275694" ID="{5E71738C-5B0F-4335-982A-41FA71C89972}">
+					<ChildrenList>
+						<Action Name="" ID="{9D9CF163-A4F1-49FC-8631-A14A6B912EB8}" ShortID="495593114">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="object-fall-soft-275694" ID="{94125F17-694C-4973-BE3D-7D2853A5245D}" WorkUnitID="{A0A1028A-6364-413C-831E-8FC7351FC58C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
