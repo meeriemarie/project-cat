@@ -7,6 +7,7 @@ public class GameOverUI : MonoBehaviour
     public GameObject npcFootstepSource;
 
     public GameObject gameOverUI;
+    public GameObject gameWonUI;
 
     private void Start()
     {
@@ -20,6 +21,15 @@ public class GameOverUI : MonoBehaviour
         AkUnitySoundEngine.PostEvent("Stop_concrete_footsteps_6752", npcFootstepSource);
         GameIsOver = true;
         gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void TriggerGameWon()
+    {
+        Debug.Log("Game Won triggered");
+        AkUnitySoundEngine.PostEvent("Stop_concrete_footsteps_6752", npcFootstepSource);
+        GameIsOver = true;
+        gameWonUI.SetActive(true);
         Time.timeScale = 0f;
     }
 

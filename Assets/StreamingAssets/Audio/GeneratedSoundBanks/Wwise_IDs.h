@@ -13,7 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_COFFEE_MUG_BREAKING_80394 = 1870011359U;
         static const AkUniqueID PLAY_CONCRETE_FOOTSTEPS_6752 = 1984218746U;
         static const AkUniqueID PLAY_CYBER_TOWN_SIMCITY_STYLE_MUSIC_22907 = 3784844564U;
         static const AkUniqueID PLAY_MEOW_MEOW_MEOW_TIKTOK = 1677764685U;

@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     private bool gameOver = false;
 
-    public GameOverUI gameOverUI; 
+    public GameOverUI gameOverUI;
 
 
     private void Awake()
@@ -37,9 +37,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over! Player was caught.");
         Debug.Log("Game over start");
         AkUnitySoundEngine.PostEvent("Play_meow_meow_meow_tiktok", gameObject);
-  Debug.Log("Game over end");
+        Debug.Log("Game over end");
         if (gameOverUI != null)
-        gameOverUI.TriggerGameOver();
+            gameOverUI.TriggerGameOver();
     }
     public void CheckScoreForUnlock(int currentScore)
     {
@@ -52,4 +52,20 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void OnGameWon()
+    {
+        if (gameOver) return;
+
+        gameOver = true;
+        Debug.Log("Game Won! Player escaped.");
+
+        // Play a win sound (if you have one)
+        AkUnitySoundEngine.PostEvent("Play_game_won", gameObject);
+
+        // Trigger the Game Over UI with a “win” message
+        if (gameOverUI != null)
+            gameOverUI.TriggerGameWon();
+    }
+
 }

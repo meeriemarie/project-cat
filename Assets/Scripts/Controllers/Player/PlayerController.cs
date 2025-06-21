@@ -28,12 +28,17 @@ public class PlayerController : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator _animator;
 
+    public RandomMeow RandomMeow;
+
     private Rigidbody _rb;
     private Vector2 _moveInput;
     private bool _isGrounded;
+    private RandomMeow _randomMeow;
+
 
     private void Awake()
     {
+        _randomMeow = GetComponent<RandomMeow>();
         _rb = GetComponent<Rigidbody>();
         _rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
@@ -108,9 +113,13 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(DashCooldownRoutine());
     }
 
-    public void OnScratch()
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        _animator.SetTrigger("scratchTrigger");
+        if (context.performed)
+        {
+            Debug.Log("Meow triggered!");
+            _randomMeow.PlayRandomSound();
+        }
     }
 
     private IEnumerator EndDashEarly()
